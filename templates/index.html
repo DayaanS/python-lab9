@@ -1,10 +1,26 @@
 <html>
     <head>
-        <title>Tasks :3</title>
+        <title>🕮 Books</title>
+        <script type="text/javascript" src="/static/main.js"></script>
+        <link href="/static/main.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Read Book List</h1>
-        
+        <h1>⊹₊˚‧︵‿₊୨ Read Book List ୧₊‿︵‧˚₊⊹</h1>
+        <h2>Add New Book</h2>
+        <form>
+            <div>
+                <input type="text" name="add_author" id="add_author">
+                <label for="add_author">Book Author</label>
+            </div>
+            <div>
+                <input type="text" name="add_name" id="add_name">
+                <label for="add_name">Book Title</label>
+            </div>
+            <div>
+                <button onClick="addBook()">Add</button>
+            </div>
+        </form>
+
         <ul>
             {% for book in book_list %}
             <li>
