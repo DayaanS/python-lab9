@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Tasks :3</title>
+    </head>
+    <body>
+        <h1>Read Book List</h1>
+        
+        <ul>
+            {% for book in book_list %}
+            <li>
+                <div>
+                    {{ book['author'] }}
+                </div>
+                <div>
+                    <i>{{ book['name'] }}</i>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
