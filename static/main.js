@@ -15,8 +15,8 @@ function deleteBook(el) {
     id = el.value
     fetch('/delete/' + id, {
         method: 'delete',
-        headers: {'Content-Type': 'application/json'}
-        }
-    )
+        headers: {'Content-Type': 'application/json'},
+        }).then(() => {
+            window.location.reload();
+        })
 }
-
