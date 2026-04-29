@@ -20,11 +20,29 @@ h1 {
 }
 
 body {
-    padding-top: 50px;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: antiquewhite;
+    color: #341b12;
 }
 
 input,label {
     display: block;
+}
+
+button {
+    border-radius: 5px;
+    border-width: 0;
+    background-color: #341b12;
+    color: antiquewhite;
+    padding: 5px 5px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+input {
+    border-radius: 5px;
 }

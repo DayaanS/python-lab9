@@ -29,8 +29,9 @@
             <li>
                 {{ book['author'] }} — 
                 <i>"{{ book['name'] }}"</i>
+                <button value="{{book['id']}}" onClick="deleteBook(this)">Delete</button>
             </li>
-            <button value="{{book['id']}}" onClick="deleteBook(this)">Delete</button>
+            
             {% endfor %}
         </ul>
 
